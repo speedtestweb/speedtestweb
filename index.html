@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test | Futuristic Internet Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+    <!-- Add meta tags for better sharing -->
+    <meta property="og:title" content="Speed Test | Futuristic Internet Speed Test">
+    <meta property="og:description" content="Check out my internet speed test results with this futuristic speed testing tool">
+    <meta property="og:image" content="https://example.com/speed-test-preview.jpg">
+    <meta property="og:url" content="https://example.com/speed-test">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-text">Speed Test</span>
+                <span class="logo-tagline">musannef</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Speed Test</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero section removed as requested -->
+
+            <section class="speed-test-container">
+                <div class="speed-test-card">
+                    <div class="speed-test-header">
+                        <h2>Speed Test</h2>
+                        <div class="connection-info">
+                            <div class="connection-type">Connection: <span id="connection-type">Detecting...</span></div>
+                            <div class="server-info">Server: <span id="server-location">Auto-Select</span></div>
+                        </div>
+                    </div>
+
+                    <div class="speed-display">
+                        <div class="speed-gauge">
+                            <div class="gauge-container">
+                                <canvas id="gauge-canvas"></canvas>
+                                <div class="gauge-value" id="current-speed">0</div>
+                                <div class="gauge-unit">Mbps</div>
+                            </div>
+                        </div>
+
+                        <div class="speed-details">
+                            <div class="detail-item">
+                                <div class="detail-label">DOWNLOAD</div>
+                                <div class="detail-value" id="download-speed">0 Mbps</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">UPLOAD</div>
+                                <div class="detail-value" id="upload-speed">0 Mbps</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">PING</div>
+                                <div class="detail-value" id="ping-value">0 ms</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">JITTER</div>
+                                <div class="detail-value" id="jitter-value">0 ms</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="test-controls">
+                        <button id="start-test" class="start-button">START TEST</button>
+                        <div class="test-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="test-progress-bar"></div>
+                            </div>
+                            <div class="progress-status" id="test-status">Ready</div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-metrics">
+                        <h3>Advanced Metrics</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-icon">📶</div>
+                                <div class="metric-name">Packet Loss</div>
+                                <div class="metric-value" id="packet-loss">0%</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">🔄</div>
+                                <div class="metric-name">Latency Stability</div>
+                                <div class="metric-value" id="latency-stability">N/A</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">📊</div>
+                                <div class="metric-name">Network Quality</div>
+                                <div class="metric-value" id="network-quality">N/A</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">🌐</div>
+                                <div class="metric-name">DNS Response</div>
+                                <div class="metric-value" id="dns-response">0 ms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card hidden" id="result-card">
+                    <h3>Test Results</h3>
+                    <div class="result-summary">
+                        <div class="result-rating">
+                            <div class="rating-score" id="rating-score">A+</div>
+                            <div class="rating-text">Your connection is <span id="connection-rating">excellent</span></div>
+                        </div>
+                        <div class="result-comparison">
+                            <div class="comparison-text">Your speed is <span id="speed-comparison">faster than 95%</span> of users</div>
+                        </div>
+                    </div>
+                    <div class="result-recommendations">
+                        <h4>AI Recommendations</h4>
+                        <ul id="recommendations-list">
+                            <li>Your connection is optimized for streaming 8K content</li>
+                            <li>Perfect for cloud gaming with near-zero latency</li>
+                            <li>Suitable for multiple concurrent high-bandwidth activities</li>
+                        </ul>
+                    </div>
+                    <button id="share-results" class="share-button">SHARE RESULTS</button>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Future-Ready Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔮</div>
+                        <h3>Predictive Analysis</h3>
+                        <p>AI-powered predictions of your connection stability over the next 24 hours</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Cross-Device Sync</h3>
+                        <p>Monitor your network performance across all connected devices</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Quantum Security Check</h3>
+                        <p>Advanced security analysis of your network connection against quantum threats</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Historical Tracking</h3>
+                        <p>View detailed performance trends and analytics from your past speed tests</p>
+                    </div>
+                </div>
+            </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">Speed Test</div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Speed Test. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="share-modal.js"></script>
+</body>
+</html>
