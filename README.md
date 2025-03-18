@@ -10,7 +10,7 @@ Welcome to **Internet Speed Test**, a simple and fast tool to check your interne
 - **Accurate Results**: Reliable speed testing for home or office networks.
 
 ## How to Use
-1. Visit our website: [www.example.com][(https://www.speedtestweb.com)].
+1. Visit our website:(https://www.speedtestweb.com).
 2. Click the **"Start Test"** button.
 3. Wait a few seconds for the test to complete.
 4. View your results for download speed, upload speed, and ping.
