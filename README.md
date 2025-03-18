@@ -46,8 +46,8 @@ Yes, our website is fully responsive and works on all devices, including smartph
 Internet Speed Test is a free tool designed to help users quickly and easily check their internet connection speed. Our goal is to provide accurate and reliable results for everyone.
 
 ## Contact Us
-Have questions or feedback? Contact us at [support@example.com](mailto:support@example.com).
+Have questions or feedback? Contact us at (mailtospeedtestw3b@gmail.com).
 
 ---
 
-**Visit [www.example.com](https://www.example.com) now to test your internet speed!**
+**Visit https://speedtestweb.site now to test your internet speed!**
